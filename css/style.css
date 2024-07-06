@@ -1358,3 +1358,48 @@ input[type="text"] {
   background-color: #B19CD9;
   /* Pastel Lilac */
 }
+
+/*my skills*/
+
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.about__skillsTitle {
+  color: #FF9000;
+  font-size: 3.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.about__skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem;
+}
+
+.about__skillsList li {
+  font-size: 1.9rem;
+  padding: 0.5rem 2rem;
+  color: #FF9000;
+  padding-top: 0.8rem;
+  border: 2px solid #FF9000;
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.about__skillsList li:hover {
+  background-color: #FF9000;
+  color:white;
+}
+@media only screen and (max-width: 900px) {
+  .about__skillsList li {
+      font-size: 1.3rem;
+      padding: 0.5rem 1.5rem;
+  }
+}
